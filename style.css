@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 4px;
+  /* height: 600px; */
+}
+.wrapper {
+  width: 400px;
+
+  margin: 2rem;
+  border: 3px solid tomato;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+}
+.screen {
+  padding: 60px 12px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  text-align: right;
+}
+
+.calc-button-row {
+  display: flex;
+  justify-content: space-between;
+  flex: row nowrap;
+  margin-bottom: 0.5%;
+}
+
+.calc-button {
+  color: black;
+  background-color: lightgray;
+  font-size: 50px;
+  height: 100px;
+  flex-basis: 24.5%;
+  border: none;
+  outline: none;
+}
+
+.calc-button:hover {
+  background-color: tomato;
+  color: darkgray;
+}
+
+.calc-button:active {
+  background-color: darkgoldenrod;
+}
+
+.double {
+  flex-basis: 49.5%;
+}
+
+.triple {
+  flex-basis: 74.9%;
+}
+
+.calc-button:last-child {
+  background-color: coral;
+}
+
+.calc-button:last-child:hover {
+  background-color: brown;
+  color: chartreuse;
+}
+
+.calc-button:last-child:active {
+  background-color: coral;
+}
